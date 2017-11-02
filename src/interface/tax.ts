@@ -1,5 +1,6 @@
 import { TaxType } from '../common/enum';
+import { TaxModel } from '../model/tax';
 
 export interface ITax {
-    caculator(amount: number): number;
+    calculateTax(amount: number,rates : TaxModel[]): number;
 }

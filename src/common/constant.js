@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 let taxRates = {
     'shanghai': [
         {
@@ -43,34 +45,29 @@ let taxRates = {
             'buffer': 13505
         },
     ]
-}
-
+};
+exports.taxRates = taxRates;
 let insurances = {
     'pension': {
-        name : '养老保险',
+        name: '养老保险',
         rate: 0.08,
     },
     'medical': {
-        name : '医疗保险',
+        name: '医疗保险',
         rate: 0.02
     },
     'unemployment': {
-        name : '失业保险',
+        name: '失业保险',
         rate: 0.005
     },
     'house': {
-        name : '住房公积金',
+        name: '住房公积金',
         rate: 0.07,
         max: 2732
     }
-}
-
+};
+exports.insurances = insurances;
 let minAmount = 3500;
+exports.minAmount = minAmount;
 let maxInsuranceAmount = 19512;
-
-export {
-    taxRates,
-    insurances,
-    minAmount,
-    maxInsuranceAmount
-}
+exports.maxInsuranceAmount = maxInsuranceAmount;
